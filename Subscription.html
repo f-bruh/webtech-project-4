@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" href="SubscriptionStyle.css">
+    <title>Subscription</title>
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Home.html">Home</a>
+      <a href="about us.html">About Us</a>
+      <a href="list_article.html">Articles</a>
+      <a href="videos.html">Videos</a>
+      <a href="Contact_Us_Page.html">Contact Us</a>
+      <a href="Subscription.html">Subscription</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+      <button id="navbutton" onclick="openNav()">NAVIGATION</button>
+
+    <div id="main">
+
+    <div id="subscriptionPage">
+      <header>
+        <h1>Subscription</h1>
+        <h4><a href="Home.html">Home</a> > <a href="#">Subscription</a></h4>
+      </header>
+
+      <div id="content">
+
+        <h1>Love Yourself, <br>
+        Love Your Health.</h1>
+        <h4>Subscribe now and we will notify you when our new article comes up!</h4>
+
+        <div id="error"></div>
+        <form name="form" onsubmit="return validateForm()">
+
+        <label for="email"></label><br>
+        <input type="text" id="email" placeholder="Email" required>
+
+        <button type="submit" name="button" id="subscribe">Subscribe</button>
+
+        </form>
+
+      </div>
+
+      <footer>
+
+        <a href="Home.html">Home</a> <a href="about us.html">About Us</a> <a href="Contact_Us_Page.html">Contact Us</a>
+
+      </footer>
+    </div>
+  </body>
+  </div>
+  <script src="SubscriptionScript.js" charset="utf-8"></script>
+</html>
