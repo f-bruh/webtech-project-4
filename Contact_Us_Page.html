@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us Page</title>
+    <link rel="stylesheet" href="ContactPageStyle.css">
+  </head>
+  <body>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Home.html">Home</a>
+      <a href="about us.html">About Us</a>
+      <a href="list_article.html">Articles</a>
+      <a href="videos.html">Videos</a>
+      <a href="Contact_Us_Page.html">Contact Us</a>
+      <a href="Subscription.html">Subscription</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+      <button id="navbutton" onclick="openNav()">NAVIGATION</button>
+      <br>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+
+    <div id = "ContactPage">
+      <header>
+        <h1>Contact Us</h1>
+        <h4>Home > Contact Us</h4>
+      </header>
+      <div id = "PageContent">
+        <div id = "UserDetails">
+          <div class = "formheader">
+            <img src="WT_ICON2.png"
+               alt="Question Icon"
+               width="50" height="50">
+            <h3>Have a question?</h3>
+          </div>
+            <div id="error_message"></div>
+          <form name="myForm" onsubmit="return validateForm()">
+            <div id = "namedetail">
+              <div id = "namelabel1">
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" class="detail-input" required><br><br>
+              </div>
+              <div id = "namelabel2">
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" class="detail-input" required><br><br>
+              </div>
+            </div>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" class="detail-input" required><br><br>
+
+            <label for="phoneNo">Phone</label><br>
+            <input type="text" id="phoneNo" class="detail-input" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea name="message" rows="5" cols="30" class="detail-input"></textarea><br>
+
+            <button type="submit" name="button" id="SubmitButton">Submit</button>
+
+          </form>
+
+        </div>
+        <div id = "OurLocation">
+          <div class = "formheader">
+            <img src="WT_ICON1.png"
+               alt="  Form Icon"
+               width="50" height="50">
+            <h3>Contact us at</h3>
+          </div>
+          <p>Stay Living 500 Backstreet 1/2,<br>
+            Jalan Gombak,53100 Kuala Lumpur.<br>
+          Tel: 012-34567890<br>Email: <a href="mailto:webmaster@iium.edu.my">staycalm@gmail.com</a></p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.3994960092477!2d101.73248081475761!3d3.2504766976334976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38c2f70795af%3A0xf808897bf1163a3!2sOffice%20of%20Internal%20Audit%2C%20IIUM%20Gombak!5e0!3m2!1sen!2smy!4v1609069744050!5m2!1sen!2smy"
+          width="420" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <br><br>
+          <a href = "https://www.instagram.com/officialiium/?hl=en">
+            <img src="WT_ICON3.png"
+               alt="IG Icon"
+               width="30" height="30">
+          </a>
+          <a href = "https://twitter.com/OfficialIIUM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+            <img src="WT_ICON4.png"
+               alt="Twitter Icon"
+               width="30" height="30">
+          </a>
+          <a href = "https://www.facebook.com/IIUMSU/">
+            <img src="WT_ICON5.png"
+               alt="Facebook Icon"
+               width="30" height="30">
+          </a>
+        </div>
+      </div>
+      <footer>
+
+        <ul>
+          <li>
+            <a href = "https://www.instagram.com/officialiium/?hl=en">
+              <img src="WT_ICON3.png"
+                 alt="IG Icon"
+                 width="10" height="10"> Instagram
+            </a>
+          </li>
+          <li>
+            <a href = "https://twitter.com/OfficialIIUM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <img src="WT_ICON4.png"
+                 alt="Twitter Icon"
+                 width="10" height="10"> Twitter
+            </a>
+          </li>
+          <li>
+            <a href = "https://www.facebook.com/IIUMSU/">
+              <img src="WT_ICON5.png"
+                 alt="Facebook Icon"
+                 width="10" height="10"> Facebook
+            </a>
+          </li>
+        </ul>
+        <div class = "padleft">
+          <label for="subscribeus">Subscribe to our newsletter</label><br>
+          <input type="text" class="boxsty" name="subscribeus" placeholder="Email address">
+          <button type="submit" class="boxsty" id="subbutton" onClick="Response()">Ok</button>
+        </div>
+        <p class = "padleft">Stay Living 500 Backstreet 1/2,<br>
+          Jalan Gombak,53100 Kuala Lumpur.<br></p>
+      </footer>
+    </div>
+    </div>
+    <script src="ContactPageScript.js" charset="utf-8"></script>
+  </body>
+</html>

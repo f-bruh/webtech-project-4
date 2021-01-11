@@ -1,0 +1,242 @@
+/* The side navigation menu */
+.sidenav {
+ height: 100%; /* 100% Full-height */
+ width: 0; /* 0 width - change this with JavaScript */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Stay on top */
+ top: 0; /* Stay at the top */
+ left: 0;
+ background-color: #1a8cff; /* Blue*/
+ overflow-x: hidden; /* Disable horizontal scroll */
+ padding-top: 60px; /* Place content 60px from the top */
+ transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+ padding: 8px 8px 8px 32px;
+ text-decoration: none;
+ font-size: 25px;
+ color: #f1f1f1;
+ display: block;
+ transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+ color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+ position: absolute;
+ top: 0;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+ transition: margin-left .5s;
+ padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+ .sidenav {padding-top: 15px;}
+ .sidenav a {font-size: 18px;}
+}
+
+#navbutton{
+  background-color: #2699FB;
+  border-color: #95989A;
+  border-style: none;
+  border-width: 10px;
+  color: white;
+  text-decoration: unset;
+  padding: 1em 2em;
+  font-size: 12px;
+  float: left;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.Page {
+  width: 100%;
+  background-color: #2699FB;
+}
+
+.banner {
+  height: 200px;
+  position: relative;
+  width: 100%;
+  background-color: #2699FB;
+}
+
+.banner h1 {
+  font-family: sans-serif;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.banner p {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.missions:after {
+  height: 5rem;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mission {
+  border: solid black 1px;
+  float: left;
+  width: 32.5%;
+  background: #ccc;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 27rem;
+  overflow: auto;
+}
+
+.mission h2 {}
+
+.vision {
+  border: solid black 1px;
+  float: left;
+  width: 32.5%;
+  background: #ccc;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-right: 0%;
+  height: 27rem;
+  overflow: auto;
+}
+
+.value {
+  border: solid black 1px;
+  float: right;
+  width: 32.5%;
+  background: #ccc;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 27rem;
+  overflow: auto;
+}
+
+.mission img, .vision img, .value img {
+  width: 100%;
+  background-color: white;
+}
+
+.mission p, .mission h2, .vision p, .vision h2, .value p, .value h2 {
+  padding: 10px;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+.history {
+  //border: solid black 1px;
+  padding: 10px;
+  //background: #ccc;
+  height: 35rem;
+  overflow: auto;
+}
+
+.history h2 {
+  font-family: sans-serif;
+  width: 60%;
+  text-align: justify;
+  left: 45%;
+  position: relative;
+}
+
+.history p {
+  font-family: sans-serif;
+  width: 60%;
+  text-align: justify;
+  left: 20%;
+  position: relative;
+}
+
+.members {
+  background-color: #2699FB;
+  height: 50rem;
+}
+
+.members h1 {
+  font-family: sans-serif;
+}
+
+.member1,.member2,.member3,.member4 {
+  border: solid black 1px;
+  float: left;
+  width: 19%;
+  background: #ccc;
+  margin-right: 1%;
+  overflow: hidden;
+}
+
+
+.member5 {
+  border: solid black 1px;
+  float: left;
+  width: 19%;
+  background: #ccc;
+  overflow: hidden;
+}
+
+.member1 img, .member2 img, .member3 img ,.member4 img , .member5 img{
+  width: 100%;
+}
+
+.member1 h2, .member1 p, .member2 h2, .member2 p, .member3 h2, .member3 p, .member4 h2, .member4 p,.member5 h2, .member5 p, {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.member1 a, .member3 a, .member2 a , .member4 a, .member5 a{
+  float: right;
+  padding: 10px;
+  font-style: italic;
+  text-decoration: none;
+  color: blue;
+}
+
+.members h2 {
+  font-family: sans-serif;
+  padding: 10px;
+}
