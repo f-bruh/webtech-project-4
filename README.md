@@ -3,6 +3,12 @@ WEB TECHNOLOGIES PROJECT - GROUP 4
 
 
 
+
+
+
+
+
+
 1. PROJECT DESCRIPTION
 
 The world has been shocked by the emergence of coronavirus which is known as Covid-19 that
